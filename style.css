@@ -1,0 +1,507 @@
+/*
+Theme Name: HEK Inside
+Author: [jlv] - José L. Viéitez
+Author URI: http://jlv.com.ve
+Version: 1.0
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/copyleft/gpl.html
+Description: Kadetel Inside es un WordpressTheme diseñado y desarrollado para kadetel.com
+Tags: blue, white, gray, black, green, brown
+*/
+
+/*
+	BASICS STYLES
+*/
+
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+img {
+  display: block;
+}
+
+img {
+	border: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    color: #77abdb;
+    background-color: transparent;
+	text-decoration: underline;
+}
+
+a:hover {
+    color: #777;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+p {
+	margin-top: 20px;
+}
+
+p:first-child {
+	margin-top: 0;
+}
+
+h1 {
+	margin-bottom: 50px;
+	font-size: 2.0em;
+}
+
+h2 {
+	margin-bottom: 40px;
+	font-size: 1.8em;
+}
+
+h3 {
+	margin-bottom: 30px;
+	font-size: 1.6em;
+}
+
+h4 {
+	margin-bottom: 20px;
+	font-size: 1.4em;
+}
+
+h5 {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+
+h6 {
+	margin-bottom: 5px;
+	font-size: 1em;
+}
+
+ul,
+ol {
+	margin: 0 0 0 50px;
+}
+
+blockquote {
+	display: inline-block;
+	font-style: italic;
+}
+
+blockquote:before,
+blockquote:after {
+	content: "\"";
+	float: left;
+}
+
+blockquote p {
+	margin: 0;
+	float: left;
+}
+
+/*
+	Wordpress Basic Styles ????????? REVISAR ??????????
+*/
+
+.wp-caption {
+	display: block;
+}
+
+.wp-caption-text {
+	padding: 5px 3px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .7em;
+	background-color: rgba(210,35,42,1);
+}
+
+.aligncenter {
+	display: block;
+	margin: 15px auto 0;
+}
+
+.alignnone,
+.alignleft,
+.alignright {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.alignleft {
+	margin-right: 15px;
+	float: left;
+}
+
+.alignright {
+	margin-left: 15px;
+	float: right;
+}
+
+p img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+/* 
+	SIDEBAR Styles
+*/
+
+.Sidebar {
+	position: absolute;
+	top: 0;
+	display: block;
+	vertical-align: top;
+	width: 100%;
+	height: 500px;
+}
+
+@media all and (min-width: 320px)  {
+
+	.Sidebar {}
+
+}
+
+@media all and (min-width: 480px)  {
+
+	.Sidebar {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 200px;
+		height: auto;
+		border-right: 5px solid rgba(250,250,250,.3);
+		background-image: url(static/images/bg-lines.png);
+		background-repeat: repeat-y;
+	}
+
+}
+
+/*
+	SIDEBAR - LOGO
+*/
+
+.Logo {
+	display: block;
+}
+
+.Logo img {
+	display: block;
+	margin: 40px auto 0;
+}
+
+/*
+	SIDEBAR - NAV MENU
+*/
+
+.Nav {
+	margin: 50px 0 0 0;
+}
+
+.Nav ul.MainMenu {
+	margin: 0;
+	list-style: none;
+}
+
+.Nav ul.MainMenu li.menu-item {
+	margin-bottom: 1px;
+}
+
+.Nav ul.MainMenu li.menu-item a {
+	display: block;
+	padding: 10px 20px 10px 20px;
+	color: #77abdb;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-bottom: 1px solid #dedede;
+	background-color: rgba(238,238,238,.5);
+}
+
+.Nav ul.MainMenu li.menu-item a:hover {
+	padding: 10px 10px 10px 30px;
+	border-bottom: 1px solid #77abdb;
+	background-color: rgba(230,240,250,.8);
+}
+
+/*
+	SIDEBAR - SOCIAL MENU
+*/
+
+.Social {
+	position: absolute;
+	bottom: 80px;
+	left: 10px;
+	right: 10px;
+	/*margin: 10px 0 0 20px;*/
+}
+
+.Social ul.SocialMenu {
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px 0 0 0;
+	list-style: none;
+}
+
+.Social ul.SocialMenu li.menu-item {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.Social ul.SocialMenu li.menu-item a {
+	position: relative;
+	display: block;
+	font-size: 0;
+	width: 32px;
+	height: 32px;
+}
+
+.Social ul.SocialMenu li a:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.Social ul.SocialMenu li.facebook a:before {
+	background-image: url(static/images/icon-facebook.png);
+}
+
+.Social ul.SocialMenu li.twitter a:before {
+	background-image: url(static/images/icon-twitter.png);
+}
+
+/*
+	SIDEBAR - COPYRIGHT
+*/
+
+.Copyright {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+}
+
+.Copyright p {
+	margin: 0;
+	font-size: .7em;
+}
+
+/*
+	CONTAINER Styles
+*/
+
+.Container {
+	position: relative;
+	display: block;
+	vertical-align: top;
+	margin: 500px 0 0 0;
+	
+}
+
+@media all and (min-width: 320px)  {
+
+	.Container {}
+
+}
+
+@media all and (min-width: 480px)  {
+
+	.Container {
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 200px;
+		margin: 0;
+		overflow: auto;
+		background-image: url(static/images/bg.jpg);
+	}
+
+}
+
+.Container-inner {
+	position: relative;
+}
+
+.BGVideo {
+	position: fixed;
+	top: -10%;
+	bottom: -10%;
+	left: -10%;
+	right: -10%;
+	z-index: 0;
+	width: 120%;
+	height: 120%;
+	background-color: #333;
+}
+
+#bg-fluid-video {
+	opacity: .5;
+}
+
+.Content {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	width: 100%;
+}
+
+.Section {
+	display: block;
+	margin: 50px 0 0 0;
+	padding: 50px 80px;
+	background-color: rgba(238,238,238,.7);
+	text-align: center;
+}
+
+.Section-title,
+.Section-content {
+	display: block;
+	margin: 0 0 25px 0;
+}
+
+.Section-title {
+	color: #77abdb;
+	border-bottom: 1px solid #77abdb;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.Section-content {
+	margin: 0 auto;
+	padding: 30px 100px;
+	width: 80%;
+	color: #77abdb;
+	font-size: 18px;
+	text-align: left;
+}
+
+.Services {
+	padding: 50px 80px 0;
+	background-color: rgba(238,238,238,.7);
+}
+
+.Services-title {
+	display: block;
+}
+
+.Services-content {
+	display: block;
+	text-align: center;
+}
+
+.Services-item {
+	display: inline-block;
+	vertical-align: top;
+	padding: 2% 5%;
+	width: 22%;
+	border-left: 5px solid transparent;
+	text-align: center;
+}
+
+.Services-item a {
+	display: block;
+	text-decoration: none;
+}
+
+.Services-itemicon {
+	display: block;
+	margin: 0 auto;
+}
+
+.Services-itemicon img {
+	display: inline-block;
+	opacity: .7;
+}
+
+.Services-itemdescription {
+	color: #77abdb;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.5em;
+}
+
+.Services-item:hover .Services-itemdescription {
+	color: #555;
+}
+
+.Services-item:hover .Services-itemicon img {
+	opacity: 1;
+}
+
+.BGCompany {
+	background-image: url(static/images/company.jpg);
+	background-position: center center;
+	background-size: 120% auto;
+}
+
+.BGServices {
+	background-image: url(static/images/services.jpg);
+	background-position: center center;
+	background-size: 120% auto;
+}
+
+.BGSales {
+	background-image: url(static/images/sales.jpg);
+	background-position: center center;
+	background-size: 120% auto;
+}
+
+.BGContact {
+	background-image: url(static/images/contact.jpg);
+	background-position: center center;
+	background-size: 120% auto;
+}

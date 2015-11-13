@@ -1,0 +1,39 @@
+.u-inner {
+	display: block;
+}
+
+/* WHITE */
+
+.u-txt-white {
+	color: #fff
+}
+
+.u-bg-white {
+	background-color: #fff
+}
+
+.u-br-white {
+	border-color: #fff
+}
+
+.u-bg-white-trans {
+	background-color: rgba(255,255,255,.8)
+}
+
+/* BLUE */
+
+.u-txt-blue {
+	color: rgba(119,171,219,1);
+}
+
+.u-bg-blue {
+	background-color: rgba(119,171,219,1);
+}
+
+.u-br-blue {
+	border-color: rgba(119,171,219,1);
+}
+
+.u-bg-blue-trans {
+	background-color: rgba(119,171,219,.7);
+}
